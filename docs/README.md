@@ -156,10 +156,12 @@ def perimeter(a, b):
 - Расчет периметров геометрических фигур
 
 ## 3. Область тестирования
+```tests
 `circle.py` | `area()`, `perimeter()`
 `rectangle.py` | `area()`, `perimeter()`
 `square.py` | `area()`, `perimeter()` 
 `triangle.py` | `area()`, `perimeter()`
+```
 
 ## 4. Стратегия тестирования
 ### Типы тестирования
