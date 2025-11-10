@@ -6,7 +6,14 @@ def area(a, b):
             b (int/float): вторая сторона прямоугольника
         Возвращаемое значение:
             area (int/float): площадь прямоугольника
+        Исключения:
+            TypeError: если стороны не числа
+            ValueError: если стороны отрицательные
     '''  
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Стороны должны быть числами")
+    if a < 0 or b < 0:
+        raise ValueError("Стороны не могут быть отрицательными")
     return a * b 
 
 def perimeter(a, b): 
@@ -17,5 +24,12 @@ def perimeter(a, b):
             b (int/float): вторая сторона прямоугольника
         Возвращаемое значение:
             perimeter (int/float): периметр прямоугольника
+        Исключения:
+            TypeError: если стороны не числа
+            ValueError: если стороны отрицательные
     ''' 
-    return 2*a + 2*b 
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Стороны должны быть числами")
+    if a < 0 or b < 0:
+        raise ValueError("Стороны не могут быть отрицательными")
+    return 2*a + 2*b
