@@ -28,8 +28,8 @@ def perimeter(a, b, c):
     ''' 
     if a < 0 or b < 0 or c < 0:
         raise ValueError("Стороны треугольника не могут быть отрицательными")
-    
-    # Проверка неравенства треугольника
+    if a == 0 and b == 0 and c == 0:
+        return 0
     if a + b <= c or a + c <= b or b + c <= a:
         raise ValueError("Нарушено неравенство треугольника")
     
